@@ -1,5 +1,9 @@
+# Centroid finder for observational data
+
 #!/usr/bin/env python
 # coding: utf-8
+
+# Import necessary modules
 
 import xarray as xr
 import rioxarray as rxr
@@ -9,6 +13,8 @@ import geojson as gj
 from shapely.geometry import shape
 import openpyxl
 import sys
+
+# Set up system arguments; convert integers as necessary
 
 f=sys.argv[1]
 date=int(sys.argv[2])
@@ -56,6 +62,8 @@ obs_dataarray = xr.DataArray(obs_data)
 obs_dataset = obs_dataarray.to_dataset(name = 'precip')
 obs_dataset.rio.write_crs(4326)
 obs_dataset += obs_dataset
+
+# reconfigure data structures to prepare for merged dataset
 
 precip = obs_dataset.precip
 band = obs_dataset.band
