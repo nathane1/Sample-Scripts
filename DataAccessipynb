@@ -1,6 +1,15 @@
 {
  "cells": [
   {
+  "cell_type": "code",
+   "execution_count": 149,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# A practice script created as part of a class assignment for my computational meteorology course at Iowa State"
+    ]
+  },
+  {
    "cell_type": "code",
    "execution_count": 149,
    "metadata": {},
