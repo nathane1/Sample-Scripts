@@ -45,6 +45,10 @@ if filled2 is None:
 else:
     hourly = filled - filled2
 
+# For certain files, the APCP_surface variable was referenced as var0_1_227_surface;
+# this block of code changes if necessary, then fills in data attributes for later use
+
+    
 #hourly = hourly.rename({'var0_1_227_surface':'APCP_surface'})
 hourly_precip = hourly.APCP_surface
 hourly.coords['Longitude'] = (-1 * (360 - hourly.longitude))
