@@ -10,7 +10,7 @@ from shapely.geometry import shape
 import openpyxl
 import sys
 
-#Set input system arguments
+#Set input system arguments; initialize integers as necessary
 
 date = int(sys.argv[1])
 IHR = sys.argv[2]
