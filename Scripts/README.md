@@ -2,6 +2,15 @@ A quick note on the scripts as they were used for various projects
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Data Access for Computational Meteorology Course (Fall 2019)
+
+Scripts: DataAccess.ipynb
+
+This script was created for a class assignment in the Iowa State Computational Meteorology course. This script makes use of the thredds data server and the siphon package in order to get GFS model data for a specified time and location. After the data has been collected, it is trimmed, formatted, and then plotted for visualization purposes.
+While the data access script may not represent work that is entirely independent, it does indicate my familiarity and comfort with the thredds and siphon packages, as well as general use data analysis on Python.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Convective Initiation and Accumulated Displacement Errors (Summer 2020) 
 
 Scripts: HRRRE_Finalized.py, HREFCode.py, Obs_Data.py, RunHRRRE.sh, RunHREF.sh, RunObs.sh
